@@ -12,7 +12,7 @@ int main()
 	}
 	else if (sel == 'n' || sel == 'N')
 	{
-		cout << "Devre analizine başlamak icin herhangi bir tusa basiniz.." <<endl;
+		cout << "Devre analizine baÃ¾lamak icin herhangi bir tusa basiniz.." <<endl;
 		system("pause");
 	}
 	system("cls");
@@ -21,7 +21,7 @@ int main()
 	double empedans=0;
 	int komponentler;
 //	double frekans,voltage;
-	Node *nodes = new Node[dugumler] ;		// Node classından dugum arrayi olusturd
+	Node *nodes = new Node[dugumler] ;		// Node classÃ½ndan dugum arrayi olusturd
 	
 	cout<<"Devrenizin guc kaynaginin gerilimini ve frekansini giriniz."<<"\n>";
 	cin>>voltage;
@@ -30,7 +30,7 @@ int main()
 	
 	
 	cout << "Devrede kac dugum olacak ?" << "\n> ";
-	cin >> dugumler;		//hata analizinde,,, dugumler 1 olursa devre olamaz en az 2 olmalı.
+	cin >> dugumler;		//hata analizinde,,, dugumler 1 olursa devre olamaz en az 2 olmalÃ½.
 	try{
 		if(dugumler<2)
 		throw 0;
@@ -38,7 +38,7 @@ int main()
 	catch(int x){
 		cout<<"Hata! Devrede dugum sayisi en az 2 olmalidir.\n Program kapaniyor.";
 	}
-	for (int i=0;i<dugumler-1;i++)  // 4 dugum varsa 3 devrecik vardır [dugumler-1]
+	for (int i=0;i<dugumler-1;i++)  // 4 dugum varsa 3 devrecik vardÃ½r [dugumler-1]
 	{
 		cout << i+1 <<". ve "<< i+2 << ". dugumler arasi ..." << endl;
 		cout << "Komponent sayisini giriniz " << "\n> ";
@@ -75,8 +75,7 @@ int main()
 	
 	cout<<"\n\n";
 	
-	cout<< "	powered by safak&can&alp\n"<<endl;
-	cout<< "	Thanks to Bilgehan for his contributions in the object-oriented programming section.."<<endl;
+	
 	//catch(...){
 	//	cout<<"sorun yok";
 	//}
